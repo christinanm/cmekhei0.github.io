@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this is the metadata of the document-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dedications </title>
+    <!-- links to the two css files used -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <script>
+        window.alert("Welcome to my dedications page!"); //example of sending an alert using JavaScript
+    </script>
+
+    <h2 id="timeHeading">Current Time</h2>
+
+    <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+
+    <div id="countdown">
+        <div><span id="days">53</span><br />Days</div>
+        <div><span id="hrs">9</span><br />Hours</div>
+        <div><span id="mins">14</span><br />Minutes</div>
+        <div><span id="secs">48</span><br />Seconds</div>
+     </div>
+
+     <script defer src="script.js"></script>
+     <h1 class="title">Dedications</h1>
+
+     <div class="nunu-photo-container">
+        <img 
+        src="/assets/nunu.png"
+        alt="My black cat, Anubis (Nunu)"
+        class="nunu-img"/>
+    </div>
+
+    <div class="nunu-message">
+        <p class="experience-text">
+            I could not have made this website without my dear cat, Anubis (Nunu for short).
+            His support allowed me to push myself and be a better student. He helped me 
+            plenty when I was stuck (see: him at the desk, hard at work), and continues to
+            inspire me every day. Thank you Nunu, my life (and project) wouldn't be the same
+            without you. I've included a countdown to his birthday in the bottom left, 
+            which will be coming soon.
+            He will be turning: 
+            <div id = "nunu-age"> Nunu's Age: 
+            </div>
+            <script>
+                document.getElementById("nunu-age").textContent = 
+                nunuNewAgeString; //example of converting between a number and text 
+            </script>
+        </p>
+    </div>
+</body>
+
+</html>

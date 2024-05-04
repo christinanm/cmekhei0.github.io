@@ -1,0 +1,10 @@
+@media screen and (max-width: 1200px) { 
+    /*use of @media for responsive design;
+    chooses the nav menu to display */
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex; 
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this is the metadata of the document-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+    <!-- links to the two css files used -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <h1 class="title">Contact Me</h1>
+        <div class="details-container">
+            <form action="/contact.html" method="POST" class="contact-form"> <!-- example of formatting a form with multiple field sets -->
+                <label for="name">Name</label>
+                 <input type="text" name="full-name" id="name" required/> <!-- validating data by having fields required and example of a text input type-->
+
+                 <br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>  <!-- example of input set for mobile keyboard and validating data by having fields required-->
+
+                <br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="12" maxlength="12" required/> <!-- example of validation with patterns and field lengths-->
+
+                <br>
+
+                <label for="date">Date of Request</label>
+                <input type="date" name="date" id="date"/> <!-- example of a date/time input type-->
+
+                <br>
+
+                <label for="web-question">Are you looking to commission a website?</label> <!-- example of a radio button input type-->
+                    <br>
+                <input type="radio" name="web-question" id="yes" value="yes"/>
+                    <label for="yes">Yes</label>
+                <input type="radio" name="web-question" id="no" value="no"/>
+                    <label for="no">No</label>
+
+                <br>
+                
+                <label for="web-design">How stylized do you want your website?</label> <!-- example of rangle slider input type -->
+                    <br>
+                    <span>Basic</span>
+                        <input type="range" name="web-design" id="web-design" value="5" min="1" max="5"/>
+                    <span>Customized</span>
+                
+                <br>
+
+                <label for="web-browser1">What broswer do you want your site to be most compatible with?</label> <!-- example of a selection list-->
+                    <br>
+                <select name="web-browser1" id="web-browser1">
+                    <option value="edge">Edge</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="opera">Opera</option>
+                </select>
+
+                <br>
+
+            <label for="web-browser2"> What other browser do you want your site to be compatible with?</label> <!-- example of including a data list and using it for input-->
+                <br>
+            <input list="web-browser2" id="web-browser2" name="web-browser2"/>
+            <datalist id="web-browser2">
+                <option value="Edge"></option>
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+                <option value="Opera"></option>
+            </datalist>
+
+                <br>
+
+                <label for="spinner">On a scale of 1-10, how colorful do you want your website?</label> <!-- example of a spinner input type-->
+                <br>
+                <input name="spinner" id="spinner" type="number" value="1" step="1" min="0" max="10" />
+                
+                <br>
+
+            <span>What else would you like included in your website?</span> <!-- example of a checkbox input type-->
+                <br>
+            <input type="checkbox" name="extras" id="animations" value ="animations"/>
+                <label for="animations">Custom Animations</label>
+            <input type="checkbox" name="extras" id="hosting" value ="hosting"/>
+                <label for="hosting">Hosting</label>
+
+                <br>
+
+                    <div class="message-container">
+                        <label for="message">Message</label>
+                        <textarea type="text" name="message" id="message" rows="5" columns="5" required></textarea> <!-- example of creating/formatting a text area -->
+
+                        <br>
+                        <br>
+                        
+                    <input type="submit" value="Submit"> <!-- example of submit button-->
+                    <input type="reset" value="Reset"> <!-- example of reset button-->
+                    </div>
+            </form>
+        </div> 
+    <script src="script.js"></script>
+
+<footer>
+    <p> made with &#9829; by Christina Mekheil | &#169; 2024 </p>
+</footer>
+
+</body>
+
+</html>
